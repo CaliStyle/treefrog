@@ -1,0 +1,23 @@
+{
+  "name": "treefrog",
+  "version": "0.0.0",
+  "description": "Treefrog - isomorphic apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaliStyle/treefrog.git"
+  },
+  "keywords": [
+    "Treefrog",
+    "Isomorphic"
+  ],
+  "author": "Scott B. Wyatt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaliStyle/treefrog/issues"
+  },
+  "homepage": "https://github.com/CaliStyle/treefrog#readme"
+}
