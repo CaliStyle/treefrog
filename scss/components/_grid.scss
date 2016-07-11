@@ -1,10 +1,8 @@
-@import "panel";
-
 /*
   THE GRID
   --------
 
-  Foundation's magical, flexbox-powered grid.
+  Treefrog's magical, flexbox-powered grid.
 
   Features:
    - Horizontal or vertical grids
@@ -146,7 +144,7 @@ $block-grid-max-size: 6 !default;
   }
 }
 /*
-  Constrain the size of a block to the size of the average grid row, and center-align it. This imitates the behavior of ordinary Foundation rows.
+  Constrain the size of a block to the size of the average grid row, and center-align it. This imitates the behavior of ordinary treefrog rows.
 
   @group grid
 
