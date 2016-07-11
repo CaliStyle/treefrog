@@ -26,7 +26,7 @@ You'll need the following software installed to get started tinkering with Treef
 
 ## Get Started
 
-The Sass and JavaScript components are available on Bower and npm.
+The Sass and JavaScript components are available on npm.
 ```
 npm install treefrog --save
 ```
