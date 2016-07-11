@@ -3,6 +3,16 @@
 // treefrog.cali-style.com
 // Licensed under MIT Open Source
 
+/* AUTOMATIC EXAMPLE */
+@import 
+  "settings";
+
+@import 
+  "treefrog";
+
+
+/* MANUAL EXAMPLE */
+
 $treefrog-version: '0.0.0';
 
 @import 
