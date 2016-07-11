@@ -68,9 +68,9 @@ $card-divider-background: smartscale($card-background, 7%) !default;
   .card {
     @include card-container;
 
-    @each $color in map-keys($foundation-colors) {
+    @each $color in map-keys($treefrog-colors) {
       &.#{$color} {
-        $color-value: map-get($foundation-colors, $color);
+        $color-value: map-get($treefrog-colors, $color);
         @include card-container(
           $background: $color-value,
           $color: isitlight($color-value),

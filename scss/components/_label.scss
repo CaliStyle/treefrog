@@ -63,9 +63,9 @@ $badge-color: #fff !default;
   .label {
     @include label;
 
-    @each $color in map-keys($foundation-colors) {
+    @each $color in map-keys($treefrog-colors) {
       &.#{$color} {
-        $color-value: map-get($foundation-colors, $color);
+        $color-value: map-get($treefrog-colors, $color);
         @include label-style($color-value, auto);
       }
     }
@@ -124,9 +124,9 @@ $badge-color: #fff !default;
     &.secondary {
       @include badge-style($secondary-color, auto);
     }
-    @each $color in map-keys($foundation-colors) {
+    @each $color in map-keys($treefrog-colors) {
       &.#{$color} {
-        $color-value: map-get($foundation-colors, $color);
+        $color-value: map-get($treefrog-colors, $color);
         @include badge-style($color-value, auto);
       }
     }

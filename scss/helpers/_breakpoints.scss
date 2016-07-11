@@ -146,9 +146,9 @@ $breakpoint-classes: (small medium large) !default;
 // Used to provide media query values for javascript components.
 // Forward slash placed around everything to convince PhantomJS to read the value.
 
-meta.foundation-version {
+meta.treefrog-version {
   font-family: "#{$treefrog-version}";
 }
-meta.foundation-mq {
+meta.treefrog-mq {
   font-family: "#{map-serialize($breakpoints)}";
 }

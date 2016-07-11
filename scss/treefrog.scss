@@ -1,6 +1,6 @@
 // Treefrog
 // by ZURB
-// foundation.Cali Style.com
+// treefrog.Cali Style.com
 // Licensed under MIT Open Source
 
 $treefrog-version: '0.0.0';
@@ -48,3 +48,7 @@ $treefrog-version: '0.0.0';
   "components/accordion",
   "components/typography",
   "components/utilities";
+
+// Exports
+@import
+  "exports";

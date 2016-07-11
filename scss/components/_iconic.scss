@@ -84,9 +84,9 @@ $iconic-accent-stroke: $iconic-accent-fill !default;
     }
   }
 
-  @each $color in map-keys($foundation-colors) {
+  @each $color in map-keys($treefrog-colors) {
     .iconic-color-#{$color} {
-      @include color-icon(map-get($foundation-colors, $color));
+      @include color-icon(map-get($treefrog-colors, $color));
     }
   }
   .iconic-color-secondary {
