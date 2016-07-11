@@ -1,5 +1,5 @@
 # Treefrog
-[![DOCS][docs-image]][doc-url]
+[![Read the Docs][docs-image]][doc-url]
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][npm-download]][npm-url]
 [![Build status][ci-image]][ci-url]
