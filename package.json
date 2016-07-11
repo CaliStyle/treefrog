@@ -4,7 +4,9 @@
   "description": "Treefrog - isomorphic apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --fix . && NODE_ENV=testing",
+    "build": "gulp build",
+    "deploy": "gulp deploy:dist"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,56 @@
   "bugs": {
     "url": "https://github.com/CaliStyle/treefrog/issues"
   },
-  "homepage": "https://github.com/CaliStyle/treefrog#readme"
+  "homepage": "https://github.com/CaliStyle/treefrog#readme",
+  "devDependencies": {
+    "bootcamp": "~1.1.7",
+    "connect-modrewrite": "^0.7.9",
+    "diff": "~1.0.8",
+    "eslint": "^2.11",
+    "eslint-config-trails": "latest",
+    "front-matter": "^0.2.0",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-filter": "^2.0.0",
+    "gulp-highlight": "0.0.3",
+    "gulp-karma": "0.0.4",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-markdown": "^1.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-ng-html2js": "^0.1.8",
+    "gulp-prompt": "^0.1.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-rsync": "^0.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "highlight.js": "~7.5.0",
+    "karma-jasmine": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "marked": "~0.3.2",
+    "merge-stream": "^0.1.6",
+    "node-sass": "^3.8.0",
+    "octophant": "0.1.0",
+    "protractor": "^1.3.1",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.1",
+    "through2": "^0.6.2"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "nomen": 0
+    }
+  },
+  "dependencies": {
+    "karma": "^1.1.1"
+  }
 }

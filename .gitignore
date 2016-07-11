@@ -1,0 +1,9 @@
+/app
+*.DS_Store
+*.coffee
+/css/*
+node_modules/
+npm-debug.log
+.sass-cache/
+/build/*
+/tests/unit/scss/*.css
