@@ -8,9 +8,9 @@
 
 This is [Treefrog](https://treefrog.cali-style.com), an isomorphic frontend framework for building powerful responsive apps, from your friends at [Cali Style](https://cali-style.com).
 
-When ZURB stopped working on foundation-apps, we found a wonderful implementation of flexbox and a well written scss library. So we re-implemented these into Treefrog. Making it the first frontend framework with [Trails](http://trailsjs.io) and Isomorphic apps in mind. 
+When ZURB stopped working on foundation-apps, we found a wonderful implementation of flexbox and a well written scss library. So we re-implemented these into Treefrog and converted it to BEM while also adding our own sugar and scrapping all the javascript. Making it the first frontend framework with [Trails](http://trailsjs.io) and Isomorphic apps in mind.
 
-Treefrog doesn't assume that you want to use react or angular or vanillia javascript.  Instead it's just the frontend library and you can easily tie your javascript framework to it.
+Treefrog doesn't assume that you want to use react or angular or vanillia javascript.  Instead it's just the frontend style library and you can easily tie your javascript framework to it.
 
 Looking for the Trailpack?  Visit <https://github.com/CaliStyle/trailpack-treefrog>.
 
@@ -21,19 +21,18 @@ Looking for the Generator?  Visit <https://github.com/CaliStyle/generator-treefr
 You'll need the following software installed to get started tinkering with Treefrog.
 
   * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Git](http://git-scm.com/downloads): Use the installer for your OS.
   * [Gulp](http://gulpjs.com/) Run `[sudo] npm install -g gulp`
 
 ## Get Started
 
-The Sass and JavaScript components are available on npm.
-```
-npm install treefrog --save
+The Sass components are available on npm.
+```sh
+$ npm install treefrog --save
 ```
 
 While working on your project, run:
-```
-npm start
+```sh
+$ npm start
 ```
 
 This will assemble the templates, static assets, Sass, and JavaScript. You can view the test server at this URL:
@@ -51,8 +50,8 @@ npm install
 ```
 
 While you're working on the code, run:
-```
-npm start
+```sh
+$ npm start
 ```
 
 The documentation can be viewed at the same URL as above.
