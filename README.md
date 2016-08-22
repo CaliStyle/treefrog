@@ -1,5 +1,5 @@
 # Treefrog
-[![Treefrog][trails-image]][trails-url]
+[![Treefrog][treefrog-image]][treefrog-url]
 
 [![Read the Docs][docs-image]][docs-url]
 [![NPM version][npm-image]][npm-url]
@@ -80,8 +80,8 @@ For Trails please check out our [Contributor's Guide](https://github.com/trailsj
 
 If you find a problem or have an idea, open a [new issue](https://github.com/CaliStyle/treefrog/issues) on GitHub. When filing a bug report, make sure you specify the browser and operating system you're on, and toss us a screenshot or show us how we can recreate the issue.
 
-[trails-image]: http://i.imgur.com/1IiVqTo.png
-[trails-url]: http://treefrog.io
+[treefrog-image]: http://i.imgur.com/1IiVqTo.png
+[treefrog-url]: http://treefrog.io
 [docs-image]: https://readthedocs.org/projects/treefrog/badge/?version=latest
 [docs-url]: http://treefrog.readthedocs.io/en/latest/?badge=latest
 [npm-image]: https://img.shields.io/npm/v/treefrog.svg?style=flat-square
