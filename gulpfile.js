@@ -113,13 +113,11 @@ gulp.task('clean:dist', (cb) => {
 
 // Copy static files (but not the Sass)
 gulp.task('copy', () => {
-  gulp.src(PATHS.html.base, {
+  return gulp.src(PATHS.html.base, {
     base: './docs/'
   })
   .pipe(gulp.dest('build'))
 
-  return gulp.src('./iconic/**/*')
-    .pipe(gulp.dest('build/assets/img/iconic/'))
 })
 
 // 5. STYLESHEETS
@@ -232,7 +230,7 @@ gulp.task('test', ['test:karma', 'test:sass'], () => {
 gulp.task('deploy:dist', ['clean:dist'], function(cb) {
   // const filter = $.filter(['*.css'])
 
-  gulp.src('scss/treefrog.scss')
+  gulp.src(root('scss/_treefrog.scss'))
     .pipe($.sass({
       outputStyle: 'nested',
       errLogToConsole: true
@@ -241,10 +239,10 @@ gulp.task('deploy:dist', ['clean:dist'], function(cb) {
       browsers: ['last 2 versions', 'ie 10']
     }))
     .pipe($.rename('treefrog.css'))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest(root('dist/css')))
     .pipe($.minifyCss())
     .pipe($.rename('treefrog.min.css'))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest(root('dist/css')))
 
   cb()
 })
