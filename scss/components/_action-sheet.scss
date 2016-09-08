@@ -108,7 +108,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     bottom: 0;
     transform: translateY(100%);
 
-    &--is-active {
+    &--active {
       transform: translateY(0%);
     }
   }
@@ -117,7 +117,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: 0;
     transform: translateY(-100%);
 
-    &--is-active {
+    &--active {
       transform: translateY(0%);
     }
   }
@@ -151,7 +151,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
   /*
     Active state
   */
-  &--is-active {
+  &--active {
     opacity: 1;
     pointer-events: auto;
   }
@@ -178,7 +178,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: auto;
     bottom: 0;
     transform: translateX(-50%) translateY(110%);
-    &--is-active {
+    &--active {
       transform: translateX(-50%) translateY(100%);
     }
 
@@ -198,7 +198,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: 0;
     bottom: auto;
     transform: translateX(-50%) translateY(-120%);
-    &--is-active {
+    &--active {
       transform: translateX(-50%) translateY(-110%);
     }
 

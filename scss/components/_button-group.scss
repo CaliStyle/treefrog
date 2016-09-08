@@ -1,3 +1,14 @@
+/*
+  BUTTON GROUP
+  ----------
+
+  A generic button group component that can accomodate a variety of styles and controls.
+  
+  SUPPORTS BEM
+
+  Features:
+
+*/
 /// @Treefrog.settings
 // Button Group
 $btngroup-background: $primary-color !default;
@@ -98,7 +109,7 @@ $child-selectors: '> a, > label, > button';
         @include button-style($background, auto, $color);
         border-color: scale-color($background, $lightness: -15%);
       }
-      &.is-active {
+      &--active {
         #{$child-selectors} {
           background: scale-color($background, $lightness: -15%);
         }
@@ -128,7 +139,7 @@ $child-selectors: '> a, > label, > button';
       }
 
       // This is the button when it's active
-      &.is-active > a,
+      &--active > a,
       > input:checked + label {
         &, &:hover {
           background: $background;
@@ -156,42 +167,44 @@ $child-selectors: '> a, > label, > button';
 }
 
 @include exports(button-group) {
-  .button-group {
+  .button__group {
     @include button-group;
 
     // Colors
-    &.secondary { @include button-group-style(false, $secondary-color); }
-    &.success   { @include button-group-style(false, $success-color); }
-    &.warning   { @include button-group-style(false, $warning-color); }
-    &.alert     { @include button-group-style(false, $alert-color); }
+    &--secondary { @include button-group-style(false, $secondary-color); }
+    &--success   { @include button-group-style(false, $success-color); }
+    &--warning   { @include button-group-style(false, $warning-color); }
+    &--alert     { @include button-group-style(false, $alert-color); }
 
     // Individual colors
     > li {
-      &.secondary { #{$child-selectors} { @include button-style($secondary-color, auto, $btngroup: true); } }
-      &.success   { #{$child-selectors} { @include button-style($success-color, auto, $btngroup: true); } }
-      &.warning   { #{$child-selectors} { @include button-style($warning-color, auto, $btngroup: true); } }
-      &.alert     { #{$child-selectors} { @include button-style($alert-color, auto, $btngroup: true); } }
+      // Primary is default
+      &--secondary { #{$child-selectors} { @include button-style($secondary-color, auto, $btngroup: true); } }
+      &--success   { #{$child-selectors} { @include button-style($success-color, auto, $btngroup: true); } }
+      &--warning   { #{$child-selectors} { @include button-style($warning-color, auto, $btngroup: true); } }
+      &--alert     { #{$child-selectors} { @include button-style($alert-color, auto, $btngroup: true); } }
+
+      // Disabled
+      &--disabled {
+        #{$child-selectors} {
+          @include button-disabled;
+        }
+      }
     }
 
     // Segmented
-    &.segmented { @include button-group-style(true);
-      &.secondary { @include button-group-style(true, $secondary-color); }
-      &.success   { @include button-group-style(true, $success-color); }
-      &.warning   { @include button-group-style(true, $warning-color); }
-      &.alert     { @include button-group-style(true, $alert-color); }
+    &--segmented { @include button-group-style(true);
+      // Primary is default
+      &--secondary { @include button-group-style(true, $secondary-color); }
+      &--success   { @include button-group-style(true, $success-color); }
+      &--warning   { @include button-group-style(true, $warning-color); }
+      &--alert     { @include button-group-style(true, $alert-color); }
     }
 
     // Sizing
-    &.tiny      { @include button-group-size(tiny); }
-    &.small     { @include button-group-size(small); }
-    &.large     { @include button-group-size(large); }
-    &.expand    { @include button-group-expand; }
-
-    // Disabled
-    li.disabled {
-      #{$child-selectors} {
-        @include button-disabled;
-      }
-    }
+    &--tiny      { @include button-group-size(tiny); }
+    &--small     { @include button-group-size(small); }
+    &--large     { @include button-group-size(large); }
+    &--expand    { @include button-group-expand; }
   }
 }

@@ -41,7 +41,7 @@ $accordion-content-padding: $global-padding !default;
     background: $background-hover;
   }
 
-  &--is-active > & {
+  &--active > & {
     background: $background-active;
     color: $color-active;
   }

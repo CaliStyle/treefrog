@@ -1,3 +1,14 @@
+/*
+  BUTTON
+  ------
+
+  A generic button component that can accomodate a variety of styles and controls.
+  
+  SUPPORTS BEM
+
+  Features:
+
+*/
 /// @Treefrog.settings
 // Button
 $button-padding: 0.85em 1em !default;
@@ -171,30 +182,31 @@ $button-tag-selector: false !default;
   .button {
     @include button;
 
-    &.tiny   { @include button-size(tiny); }
-    &.small  { @include button-size(small); }
-    &.large  { @include button-size(large); }
-    &.expand { @include button-expand; }
+    &--tiny   { @include button-size(tiny); }
+    &--small  { @include button-size(small); }
+    &--large  { @include button-size(large); }
+    &--expand { @include button-expand; }
 
-    &.secondary { @include button-style($secondary-color, auto) }
-    &.success   { @include button-style($success-color, auto) }
-    &.warning   { @include button-style($warning-color, auto) }
-    &.alert     { @include button-style($alert-color, auto) }
-    &.info      { @include button-style($info-color, auto) }
-    &.dark      { @include button-style($dark-color, auto) }
+    &--secondary { @include button-style($secondary-color, auto) }
+    &--success   { @include button-style($success-color, auto) }
+    &--warning   { @include button-style($warning-color, auto) }
+    &--alert     { @include button-style($alert-color, auto) }
+    &--info      { @include button-style($info-color, auto) }
+    &--dark      { @include button-style($dark-color, auto) }
+    // Disabled
+    &--disabled { @include button-disabled; }
 
     @if $button-style != hollow {
-      &.hollow { @include button-style($style: hollow);
-        &.secondary { @include button-style($secondary-color, $style: hollow); }
-        &.success   { @include button-style($success-color, $style: hollow); }
-        &.warning   { @include button-style($warning-color, $style: hollow); }
-        &.alert     { @include button-style($alert-color, $style: hollow); }
-        &.info      { @include button-style($info-color, $style: hollow); }
-        &.dark      { @include button-style($dark-color, $style: hollow); }
+      &--hollow { @include button-style($style: hollow);
+        &--secondary { @include button-style($secondary-color, $style: hollow); }
+        &--success   { @include button-style($success-color, $style: hollow); }
+        &--warning   { @include button-style($warning-color, $style: hollow); }
+        &--alert     { @include button-style($alert-color, $style: hollow); }
+        &--info      { @include button-style($info-color, $style: hollow); }
+        &--dark      { @include button-style($dark-color, $style: hollow); }
       }
     }
 
-    &.disabled { @include button-disabled; }
   }
 
   @if $button-tag-selector {

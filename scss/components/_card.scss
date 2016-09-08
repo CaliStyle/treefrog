@@ -1,10 +1,13 @@
 /*
-  Cards
+  CARD
+  ------
 
-  Structure:
+  A generic card component that can accomodate a variety of styles and controls.
+  
+  // TODO: SUPPORTS BEM
 
-  titles
-  lists
+  Features:
+
 */
 
 /// @Treefrog.settings
@@ -84,10 +87,10 @@ $card-divider-background: smartscale($card-background, 7%) !default;
       }
     }
   }
-    .card-divider {
-      @include card-divider;
-    }
-    .card-section {
-      @include card-section;
-    }
+  .card-divider {
+    @include card-divider;
+  }
+  .card-section {
+    @include card-section;
+  }
 }
