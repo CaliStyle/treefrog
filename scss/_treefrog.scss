@@ -141,6 +141,7 @@ $treefrog-version: '0.0.0';
     }
   }
 
+  // Treefrogify image tags
   img {
     // Grid Defaults to get images and embeds to work properly
     max-width: 100%;
@@ -153,10 +154,11 @@ $treefrog-version: '0.0.0';
   }
 
   // Give all anchors and interactive directives the hover cusor
-  a, [ui-sref], [tf-open], [tf-close], [tf-toggle] {
+  a {
     cursor: pointer;
   }
 
+  // Canvas Control img, embed, and object
   #map_canvas,
   .map_canvas {
     img,
@@ -164,6 +166,7 @@ $treefrog-version: '0.0.0';
     object { max-width: none !important; }
   }
 
+  // Allow for a global padding class
   .padding {
     padding: $global-padding;
   }

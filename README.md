@@ -8,6 +8,9 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
+
+SUPER EXPERIMENTAL, BREAKING CHANGES TO COME IN 1.0 RELEASE
+
 This is [Treefrog](https://treefrog.cali-style.com), an isomorphic frontend framework for building powerful responsive apps, from your friends at [Cali Style](https://cali-style.com).
 
 When ZURB stopped working on foundation-apps, we found a wonderful implementation of flexbox and a well written scss library. So we re-implemented these into Treefrog and converted it to [BEM](http://cssguidelin.es/#bem-like-naming) while also adding our own sugar and scrapping all the javascript. Making it the first frontend framework with [Trails](http://trailsjs.io) and Isomorphic apps in mind.

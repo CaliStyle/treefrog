@@ -3,9 +3,13 @@
   ------------
 
   A dropdown menu that sticks to the bottom of the screen on small devices, and becomes a dropdown menu on larger devices.
+
+  SUPPORTS BEM
+
+  Features: 
 */
 
-/// @Treefrog.settings
+// @Treefrog.settings
 // Action Sheet
 $actionsheet-background: white !default;
 $actionsheet-border-color: #ccc !default;
@@ -63,10 +67,10 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
       }
     }
 
-    .alert > a {
+    &--alert > a {
       color: $alert-color;
     }
-    .disabled > a {
+    &--disabled > a {
       pointer-events: none;
       color: #999;
     }
@@ -104,7 +108,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     bottom: 0;
     transform: translateY(100%);
 
-    &.is-active {
+    &--is-active {
       transform: translateY(0%);
     }
   }
@@ -113,7 +117,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: 0;
     transform: translateY(-100%);
 
-    &.is-active {
+    &--is-active {
       transform: translateY(0%);
     }
   }
@@ -147,7 +151,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
   /*
     Active state
   */
-  &.is-active {
+  &--is-active {
     opacity: 1;
     pointer-events: auto;
   }
@@ -174,7 +178,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: auto;
     bottom: 0;
     transform: translateX(-50%) translateY(110%);
-    &.is-active {
+    &--is-active {
       transform: translateX(-50%) translateY(100%);
     }
 
@@ -194,7 +198,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     top: 0;
     bottom: auto;
     transform: translateX(-50%) translateY(-120%);
-    &.is-active {
+    &--is-active {
       transform: translateX(-50%) translateY(-110%);
     }
 
@@ -212,11 +216,11 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
 }
 
 @include exports(action-sheet) {
-  .action-sheet-container {
+  .action-sheet__container {
     position: relative;
     display: inline-block;
 
-    .button {
+    &__button {
       margin-left: 0;
       margin-right: 0;
     }
@@ -228,12 +232,12 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
     @include breakpoint(medium) {
       @include popup-menu;
 
-      &.top {
+      &--top {
         @include popup-menu(top);
       }
     }
 
-    &.primary {
+    &--primary {
       background: $primary-color;
       color: isitlight($primary-color);
       border: 0;
@@ -247,7 +251,7 @@ $actionsheet-link-background-hover: smartscale($actionsheet-background) !default
         $background-hover: smartscale($primary-color)
       );
     }
-    &.dark {
+    &--dark {
       background: $dark-color;
       color: isitlight($dark-color);
       border: 0;

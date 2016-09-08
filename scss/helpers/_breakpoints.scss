@@ -145,6 +145,7 @@ $breakpoint-classes: (small medium large) !default;
 // Meta styles are included in all builds, so they can be a dependancy of the Javascript.
 // Used to provide media query values for javascript components.
 // Forward slash placed around everything to convince PhantomJS to read the value.
+// This also works for Shadow dom elements that need to know their global style size.
 
 meta.treefrog-version {
   font-family: "#{$treefrog-version}";

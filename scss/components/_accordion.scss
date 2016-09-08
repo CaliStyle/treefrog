@@ -3,6 +3,10 @@
   ---------
 
   The trusy accordion allows you to create a series of vertical tabs.
+
+  SUPPORTS BEM
+
+  Features:
 */
 
 /// @Treefrog.settings
@@ -37,7 +41,7 @@ $accordion-content-padding: $global-padding !default;
     background: $background-hover;
   }
 
-  .is-active > & {
+  &--is-active > & {
     background: $background-active;
     color: $color-active;
   }
@@ -49,7 +53,8 @@ $accordion-content-padding: $global-padding !default;
   padding: $padding;
 
   display: none;
-  .is-active > & {
+  
+  &--is-active > & {
     display: block;
   }
 }
@@ -59,14 +64,17 @@ $accordion-content-padding: $global-padding !default;
     @if hasvalue($accordion-border) {
       border: $accordion-border;
     }
-  }
-    .accordion-item {
+
+    &__item {
 
     }
-    .accordion-title {
+
+    &__title {
       @include accordion-title;
     }
-    .accordion-content {
+
+    &__content {
       @include accordion-content;
     }
+  }
 }

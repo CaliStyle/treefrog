@@ -3,6 +3,8 @@
   ----------
 
   A generic list component that can accomodate a variety of styles and controls.
+  
+  SUPPORTS BEM
 
   Features:
    - Icons
@@ -142,10 +144,10 @@ $blocklist-check-icons: true !default;
   }
 
   // Coloring classes
-  &.caution > a {
+  &--caution > a {
     &, &:hover { color: $alert-color; }
   }
-  &.disabled > a {
+  &--disabled > a {
     cursor: default;
     &, &:hover { color: $color-disabled; }
     &:hover { background: transparent; }
@@ -319,7 +321,7 @@ $blocklist-check-icons: true !default;
     select {
       // Reset pesky <select> styles
       -webkit-appearance: none;
-         -moz-appearance: none;
+      -moz-appearance: none;
       outline: 0;
       background: 0;
       border: 0;
@@ -347,13 +349,13 @@ $blocklist-check-icons: true !default;
     @include block-list-container;
     @include block-list-inputs;
 
-    &.with-icons { @include block-list-icons; }
+    &--with-icons { @include block-list-icons; }
     header       { @include block-list-header; }
 
     li {
       @include block-list-item;
 
-      &.with-chevron    { @include block-list-chevron; }
+      &--with-chevron    { @include block-list-chevron; }
       .block-list-label { @include block-list-label; }
     }
   }
