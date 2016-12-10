@@ -51,7 +51,7 @@
     "karma-phantomjs-launcher": "^1.0.1",
     "marked": "~0.3.2",
     "merge-stream": "^1.0.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.0.0",
     "octophant": "1.0.1",
     "protractor": "^4.0.0",
     "rimraf": "^2.2.8",
