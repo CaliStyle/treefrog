@@ -28,7 +28,7 @@
     "diff": "~3.0.0",
     "eslint": "^3.1.1",
     "eslint-config-trails": "latest",
-    "front-matter": "^2.1.0",
+    "front-matter": "^2.1.2",
     "karma": "^1.1.1",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "^3.1.0",
