@@ -53,7 +53,7 @@
     "merge-stream": "^1.0.0",
     "node-sass": "^3.8.0",
     "octophant": "1.0.1",
-    "protractor": "^4.0.0",
+    "protractor": "^5.1.0",
     "rimraf": "^2.2.8",
     "run-sequence": "^1.0.1",
     "through2": "^2.0.1"
