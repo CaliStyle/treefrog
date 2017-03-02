@@ -24,7 +24,7 @@
   "homepage": "https://github.com/CaliStyle/treefrog#readme",
   "devDependencies": {
     "bootcamp": "~1.1.7",
-    "connect-modrewrite": "^0.9.0",
+    "connect-modrewrite": "^0.10.1",
     "diff": "~3.0.0",
     "eslint": "^3.1.1",
     "eslint-config-trails": "latest",
