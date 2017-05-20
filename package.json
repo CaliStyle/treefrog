@@ -44,7 +44,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-rsync": "^0.0.6",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.1",
     "highlight.js": "~9.8.0",
     "karma-jasmine": "^1.0.2",
